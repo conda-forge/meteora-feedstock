@@ -21,8 +21,11 @@ requirements:
     - pip
   run:
     - python >=3.10
+    - dask
     - geopandas >=1.0.0
     - matplotlib-base
+    - polars
+    - pyarrow
     - requests
     - requests-cache
     - requests-oauthlib
