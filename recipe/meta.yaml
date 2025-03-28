@@ -1,5 +1,5 @@
 {% set name = "meteora" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meteora-{{ version }}.tar.gz
-  sha256: b487636043e431ec939bd56bdd57783e1156e998ad0bd5567ffb9412c408671a
+  sha256: 16358239333f217de18d2b54fee3282c6ba64e737db8b568c676b3d08a442b09
 
 build:
   noarch: python
@@ -24,12 +24,18 @@ requirements:
     - dask
     - geopandas >=1.0.0
     - matplotlib-base
+    - osmnx >=2.0.0
     - polars
+    - pooch
     - pyarrow
     - requests
     - requests-cache
     - requests-oauthlib
+    - seaborn
+    - statsmodels
     - tqdm
+    - xarray
+    - xvec
 
 test:
   imports:
