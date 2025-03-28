@@ -24,12 +24,18 @@ requirements:
     - dask
     - geopandas >=1.0.0
     - matplotlib-base
+    - osmnx >=2.0.0
     - polars
+    - pooch
     - pyarrow
     - requests
     - requests-cache
     - requests-oauthlib
+    - seaborn
+    - statsmodels
     - tqdm
+    - xarray
+    - xvec
 
 test:
   imports:
