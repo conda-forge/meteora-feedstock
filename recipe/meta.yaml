@@ -1,5 +1,5 @@
 {% set name = "meteora" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meteora-{{ version }}.tar.gz
-  sha256: 58a91921cc1c0fc8d3e11c99c822c23d2015b0e10293d149586eaa44b42c5453
+  sha256: 27af839b09a38a342c388ab5d1bdb8f7796380f6df1011fe5c98212ee29c3d9e
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61.0
+    - uv-build >=0.9.4,<0.10.0
     - pip
   run:
     - python >={{ python_min }}
@@ -27,6 +27,7 @@ requirements:
     - matplotlib-base
     - osmnx >=2.0.0
     - pooch
+    - pyregeon
     - requests
     - requests-cache
     - requests-oauthlib
