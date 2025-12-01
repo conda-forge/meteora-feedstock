@@ -27,6 +27,7 @@ requirements:
     - matplotlib-base
     - osmnx >=2.0.0
     - pooch
+    - pyregeon
     - requests
     - requests-cache
     - requests-oauthlib
