@@ -1,5 +1,5 @@
 {% set name = "meteora" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meteora-{{ version }}.tar.gz
-  sha256: 54b73f1fa657ba1f1b753da3b1de865dc18bde6439fb04ab848f0ce20b436d0e
+  sha256: 76302ca226af3f690e2e23188bfe242d7e1773185e5ce15d8c3e449d56826bed
 
 build:
   noarch: python
