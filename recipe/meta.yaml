@@ -26,6 +26,8 @@ requirements:
     - geopandas >=1.0.0
     - matplotlib-base
     - osmnx >=2.0.0
+    - pint
+    - pint-pandas
     - pooch
     - pyregeon
     - requests
@@ -35,6 +37,7 @@ requirements:
     - statsmodels
     - tqdm
     - xarray
+    - xclim
     - xvec
 
 test:
