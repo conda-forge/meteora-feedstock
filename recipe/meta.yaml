@@ -1,5 +1,5 @@
 {% set name = "meteora" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meteora-{{ version }}.tar.gz
-  sha256: 76302ca226af3f690e2e23188bfe242d7e1773185e5ce15d8c3e449d56826bed
+  sha256: 52868ed686ebba4493cf20b7c8babb70c954401895a48da5dd6fd83fdcf97679
 
 build:
   noarch: python
@@ -26,6 +26,8 @@ requirements:
     - geopandas >=1.0.0
     - matplotlib-base
     - osmnx >=2.0.0
+    - pint
+    - pint-pandas
     - pooch
     - pyregeon
     - requests
@@ -35,6 +37,7 @@ requirements:
     - statsmodels
     - tqdm
     - xarray
+    - xclim
     - xvec
 
 test:
