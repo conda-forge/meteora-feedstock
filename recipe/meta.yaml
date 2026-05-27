@@ -24,6 +24,7 @@ requirements:
     - python >={{ python_min }}
     - dask
     - geopandas >=1.0.0
+    - huggingface_hub
     - matplotlib-base
     - osmnx >=2.0.0
     - pint
@@ -33,7 +34,10 @@ requirements:
     - requests
     - requests-cache
     - requests-oauthlib
+    - scikit-learn
+    - scipy
     - seaborn
+    - skops
     - statsmodels
     - tqdm
     - xarray
